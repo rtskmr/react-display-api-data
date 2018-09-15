@@ -3,8 +3,9 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { displayEmployeeDetailsAction } from '../actions/displayEmployeeDetailsAction';
 import { connect } from 'react-redux';
+import SearchInput  from './searchInput';
 
-import '../css/todo.css';
+import '../css/employeeDetails.css';
 
 class EmployeeDetails extends Component {
   constructor(props) {
@@ -28,11 +29,11 @@ componentWillMount(){
         <td>{item.profile_image}</td>
     </tr>)
     })
-    debugger;
     return (
       <div className="mainPage">
-        List of Data
-        <div className="addedListSection"></div>
+      <div className="input-group searchSection">
+        <SearchInput />
+      </div>
         <table class="table table-striped table-bordered">
         <thead>
             <tr>

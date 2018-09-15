@@ -1,0 +1,60 @@
+.App {
+  text-align: center;
+}
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+}
+.mainPage {
+  color: black;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  -ms-flex-align: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.mainDiv {
+  width: 100%;
+  height: 100%px;
+  background: #F2F3F4;
+  text-align: left;
+}
+
+input[type=text], select {
+  width: 26rem;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.todolistInput {
+  display: flex;
+  align-items: center;
+}
+
+.addBtnStyle {
+  margin-left: 4rem;
+}
+
+.addedListSection {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.searchSection{
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  width: 50%;
+  align-content: center
+}
