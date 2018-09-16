@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { displayEmployeeDetailsAction } from '../actions/displayEmployeeDetailsAction';
 import { connect } from 'react-redux';
-import SearchInput  from './searchInput';
 
 import '../css/employeeDetails.css';
 
@@ -32,7 +31,6 @@ componentWillMount(){
     return (
       <div className="mainPage">
       <div className="input-group searchSection">
-        <SearchInput />
       </div>
         <table class="table table-striped table-bordered">
         <thead>
