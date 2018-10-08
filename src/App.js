@@ -13,7 +13,7 @@ class App extends Component {
             <div>
               <h1 className="App-title">React Display API data</h1>
             </div>
-            <div>
+            <div className="searchSection">
               <SearchInput />
             </div>
           </div>
