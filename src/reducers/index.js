@@ -3,8 +3,9 @@
  */
 
 import { combineReducers } from 'redux';
+import loginReducer from './loginReducer';
 import displayEmployeeDetailsReducer from './displayEmployeeDetailsReducer';
-
 export default combineReducers({
-    displayEmployeeDetailsReducer,
+    loginReducer,
+    displayEmployeeDetailsReducer
 });

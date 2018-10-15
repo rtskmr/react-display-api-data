@@ -19,6 +19,8 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "axios": "^0.18.0"
+    "axios": "^0.18.0",
+    "json-loader": "^0.5.7",
+    "lodash": "^4.17.11"
   }
 }

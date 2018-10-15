@@ -7,6 +7,7 @@ import registerServiceWorker from './registerServiceWorker';
 import store from './storeConfig';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
+//import Login from './components/login';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 //registerServiceWorker();

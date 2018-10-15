@@ -35,7 +35,7 @@ componentWillMount(){
         <table class="table table-striped table-bordered">
         <thead>
             <tr>
-                <th>ID</th>
+                <th>IDs</th>
                 <th>Employee Name</th>
                 <th>Employee Salary</th>
                 <th>Employee Age</th>
