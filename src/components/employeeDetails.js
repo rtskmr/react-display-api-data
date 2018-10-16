@@ -17,7 +17,7 @@ componentWillMount(){
   this.props.displayEmployeeDetailsAction();
 }
   render() {
-    const data = this.props.displayEmployeeDetails || [];
+    const data = this.props.filteredDisplayEmployeeDetails && this.props.filteredDisplayEmployeeDetails.length ? this.props.filteredDisplayEmployeeDetails: [];
     let dataList = [];
     data.map((item,index) => {
       dataList.push(<tr key={`employeeList-${index}`}>
@@ -51,7 +51,8 @@ componentWillMount(){
   }
 }
 const mapStateToProps = (state) => ({
-  displayEmployeeDetails: state.displayEmployeeDetailsReducer.displayEmployeeDetails,
+  //displayEmployeeDetails: state.displayEmployeeDetailsReducer.displayEmployeeDetails,
+  filteredDisplayEmployeeDetails: state.displayEmployeeDetailsReducer.filteredDisplayEmployeeDetails,
 });
 const mapDispatchToProps = (dispatch) => bindActionCreators({ displayEmployeeDetailsAction }, dispatch);
 

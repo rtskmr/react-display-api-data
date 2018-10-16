@@ -9,7 +9,6 @@ export default {
   },
   getLoginAuth: async () => {
     const data = Data;
-    debugger;
     return data;
   }
 }

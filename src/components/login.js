@@ -3,6 +3,15 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { loginAction } from '../actions/loginAction';
+// import Grid from '@material-ui/core/Grid';
+// import Visibility from '@material-ui/icons/Visibility';
+// import VisibilityOff from '@material-ui/icons/VisibilityOff';
+// import FormControl from '@material-ui/core/FormControl';
+// import IconButton from '@material-ui/core/IconButton';
+// import Input from '@material-ui/core/Input';
+// import InputLabel from '@material-ui/core/InputLabel';
+// import InputAdornment from '@material-ui/core/InputAdornment';
+
 import find from 'lodash/find';
 import '../css/login.css';
 
@@ -44,18 +53,47 @@ class Login extends Component {
   }
   render() {
     return (
-      <div className="loginSection">
-        <div className="container">
-      <label for="uname"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" name="uname" value={this.state.username} onChange={this.handleChange('username')} required />
-          <label for="psw"><b>Password</b></label>
-          <input type="password" value={this.state.password} onChange={this.handleChange('password')} placeholder="Enter Password" name="psw" required />
-          <button type="submit" onClick={this.login}>Login</button>
-          <label>
+      <div className="login-form">
+        <form method="post">
+          <h2 className="text-center">Log in</h2>
+          <div className="form-group">
+            <input type="text" placeholder="Enter Username" name="uname" value={this.state.username} onChange={this.handleChange('username')} required />
+          </div>
+          <div className="form-group">
+            <input type="password" placeholder="Enter Password" name="psw" value={this.state.password} onChange={this.handleChange('password')} required />
+          </div>
+          <div className="form-group">
+            <button type="submit" className="btn btn-primary btn-block" onClick={this.login}>Login</button>
+          </div>
+          <div className="clearfix">
             <input type="checkbox" checked="checked" name="remember" /> Remember me
-      </label>
-        </div>
+          </div>     
+        </form>
+        <p className="text-center"><a href="#">Create an Account</a></p>
       </div>
+
+      //   <div>
+      //   <div className="login-form">
+      //     <form method="post">
+      //       <h2 className="text-center">Log in</h2>
+      //       <div className="form-group">
+      //         <input type="text" className="form-control" placeholder="Username" required="required">
+      //     </div>
+      //         <div className="form-group">
+      //           <input type="password" className="form-control" placeholder="Password" required="required">
+      //     </div>
+      //           <div className="form-group">
+      //             <button type="submit" className="btn btn-primary btn-block">Log in</button>
+      //           </div>
+      //           <div className="clearfix">
+      //             <label className="pull-left checkbox-inline"><input type="checkbox"> Remember me </label>
+      //               <a href="#" className="pull-right">Forgot Password?</a>
+      //     </div>        
+      // </form>
+      //           <p className="text-center"><a href="#">Create an Account</a></p>
+      //         </div>        
+      //         </div>        
+
     );
   }
 }
